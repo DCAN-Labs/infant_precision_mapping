@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=dconn_corr # job name
-#SBATCH --mem-per-cpu=32GB
+#SBATCH --mem-per-cpu=60GB
 #SBATCH --time=4:00:00          # total run time limit (HH:MM:SS)
 #SBATCH --cpus-per-task=4
 #SBATCH --partition=amdsmall,small,ram256g
@@ -33,10 +33,10 @@ WB_C='/home/faird/shared/code/external/utilities/workbench/1.4.2/workbench/bin_r
 CIFTI_C='/home/faird/shared/code/external/utilities/cifti-matlab' 
 GIFTI_C='/home/faird/shared/code/external/utilities/gifti/'
 
-matlab -r "addpath('/home/miran045/shared/projects/WashU_Nordic/code'); CalculateDconntoDconnCorrelation('DconnOne','${D_ONE}','DconnTwo','${D_TWO}','OutputDirectory','${OUTDIR}', 'wb_command','${WB_C}', 'CIFTI_path','${CIFI_C}', 'GIFTI_path','${GIFI_C}')"
+matlab -r "addpath('/home/miran045/shared/projects/WashU_Nordic/code'); CalculateDconntoDconnCorrelationIndividualSeeds('DconnShort','${D_ONE}','DconnGroundTruth','${D_TWO}','OutputDirectory','${OUTDIR}', 'wb_command','${WB_C}', 'CIFTI_path','${CIFI_C}', 'GIFTI_path','${GIFI_C}')"
 
 
 #matlab arguments:
-#DconnOne, DconnTwo, OutputDirectory, wb_command, CIFI_path, GIFI_path 
+#DconnShort, DconnGroundTruth, OutputDirectory, wb_command, CIFI_path, GIFI_path 
 
 
