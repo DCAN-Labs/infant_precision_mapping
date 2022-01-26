@@ -44,8 +44,9 @@ if (dconn_one_data(1,1) > 7)
     dconn_one_data = tanh(dconn_one_data);
 end
 clear dconn_one_conn
-dconn_one_vector = zeros(length(dconn_one_data)*(length(dconn_one_data)-1)/2,1);
-dconn_one_vector(:) = dconn_one_data(abs(triu(dconn_one_data,1)) > 0);
+%dconn_one_vector = zeros(length(dconn_one_data)*(length(dconn_one_data)-1)/2,1);
+%dconn_one_vector(:,1) = dconn_one_data(abs(triu(dconn_one_data,1)) > 0);
+dconn_one_vector= dconn_one_data(abs(triu(dconn_one_data,1)) > 0);
 clear dconn_one_data
 
 %% load dconn two and select upper triangle
@@ -55,8 +56,9 @@ if (dconn_two_data(1,1) > 7)
     dconn_two_data = tanh(dconn_two_data);
 end
 clear dconn_two_conn
-dconn_two_vector = zeros(length(dconn_two_data)*(length(dconn_two_data)-1)/2,1);
-dconn_two_vector(:) = dconn_two_data(abs(triu(dconn_two_data,1)) > 0);
+% dconn_two_vector = zeros(length(dconn_two_data)*(length(dconn_two_data)-1)/2,1);
+% dconn_two_vector(:,1) = dconn_two_data(abs(triu(dconn_two_data,1)) > 0);
+dconn_two_vector= dconn_two_data(abs(triu(dconn_two_data,1)) > 0);
 clear dconn_two_data
 
 %% calculate correlation and write to file
