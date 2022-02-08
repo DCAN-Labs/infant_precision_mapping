@@ -1,0 +1,13 @@
+% addpath('/home/miran045/shared/projects/WashU_Nordic/code'); 
+% CalculateDconntoDconnCorrelationIndividualSeeds('DconnShort','/home/miran045/shared/projects/WashU_Nordic/reliability_maps/sub-4049_ses-102521_task-rest_bold_desc-filtered_timeseries.dtseries.nii_5_minutes_of_data_at_FD_0.3.dconn.nii','DconnGroundTruth','/home/miran045/shared/projects/WashU_Nordic/reliability_maps/sub-4049_ses-102521_task-rest_bold_desc-filtered_timeseries.dtseries.nii_all_frames_at_FD_0.3.dconn.nii','DistanceMatrix', '/home/miran045/shared/projects/WashU_Nordic/reliability_maps/DistanceMatrix/EUGEODistancematrix_vox_xyz.mat', 'OutputDirectory','/home/miran045/shared/projects/WashU_Nordic/reliability_maps', 'wb_command','/home/faird/shared/code/external/utilities/workbench/1.4.2/workbench/bin_rh_linux64/wb_command', 'CIFTI_path','/home/faird/shared/code/external/utilities/cifti-matlab', 'GIFTI_path','/home/faird/shared/code/external/utilities/gifti/')
+
+
+%% test euclidean distances
+addpath('/panfs/roc/groups/8/faird/shared/code/internal/utilities/distance-matrix'); 
+addpath(genpath('/panfs/roc/groups/8/faird/shared/code/external/utilities/MSCcodebase-master')); 
+%distmat_creation_distribute_RH(ciftifile, surfcoordsfileL, surfcoordsfileR, output_folder,path_to_template_dconn)
+distmat_creation_distribute_RH('/home/miran045/shared/projects/WashU_Nordic/output_tmadison/filemapper_derivatives/derivatives/infant-abcd-bids-pipeline/sub-4049/ses-102521/func/sub-4049_ses-102521_task-rest_run-10_bold_timeseries.dtseries.nii', ...
+    '/home/miran045/shared/projects/WashU_Nordic/output_tmadison/filemapper_derivatives/derivatives/infant-abcd-bids-pipeline/sub-4049/ses-102521/anat/sub-4049_ses-102521_hemi-L_space-MNI_mesh-fsLR32k_midthickness.surf.gii', ...
+    '/home/miran045/shared/projects/WashU_Nordic/output_tmadison/filemapper_derivatives/derivatives/infant-abcd-bids-pipeline/sub-4049/ses-102521/anat/sub-4049_ses-102521_hemi-R_space-MNI_mesh-fsLR32k_midthickness.surf.gii', ...
+    '/home/miran045/shared/projects/WashU_Nordic/reliability_maps/',...
+    '/home/miran045/shared/projects/WashU_Nordic/reliability_maps/sub-4049_ses-102521_task-rest_bold_desc-filtered_timeseries.dtseries.nii_all_frames_at_FD_0.3.dconn.nii');
