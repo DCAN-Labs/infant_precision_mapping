@@ -21,48 +21,78 @@ function CalculateDconntoDconnCorrelationIndividualSeeds(varargin)
 p = inputParser;
 addParamValue(p,'DconnShort','./dummy');
 addParamValue(p,'DconnGroundTruth','./dummytwo');
+addParamValue(p,'DistanceMatrix','./dummythree');
 addParamValue(p,'OutputDirectory','./');
 addParamValue(p,'wb_command','wb_command');
-addParamValue(p,'CIFTI_path','/home/faird/shared/code/internal/utilities/cifti-matlab');
-addParamValue(p,'GIFTI_path','/home/faird/shared/code/internal/utilities/gifti/');
+addParamValue(p,'CIFTI_path','/home/miran045/shared/code/internal/utilities/cifti-matlab');
+addParamValue(p,'GIFTI_path','/home/miran045/shared/code/internal/utilities/gifti/');
 
 parse(p,varargin{:})
 
-addpath(genpath('/home/miran045/shared/code/internal/utilities/Matlab_CIFTI'));
-addpath(genpath('/home/miran045/shared/code/internal/utilities/CIFTI/'));
-addpath(genpath('/home/miran045/shared/code/internal/utilities/gifti'));
+addpath(genpath('/home/miran045/shared/code/internal/utilities/cifti-matlab'));
+addpath(genpath('/home/miran045/shared/code/internal/utilities/gifti/'));
+% addpath(genpath('/home/miran045/shared/code/internal/utilities/Matlab_CIFTI'));
+% addpath(genpath('/home/miran045/shared/code/internal/utilities/CIFTI/'));
+% addpath(genpath('/home/miran045/shared/code/internal/utilities/gifti'));
 
 %% parse the inputs
 output_directory=p.Results.OutputDirectory;
 wb_command=p.Results.wb_command;
-addpath(genpath(p.Results.CIFTI_path))
-addpath(genpath(p.Results.GIFTI_path))
+%addpath(genpath(p.Results.CIFTI_path))
+%addpath(genpath(p.Results.GIFTI_path))
 dconn_short=p.Results.DconnShort;
 dconn_long=p.Results.DconnGroundTruth;
-
-%% load dconn one and select upper triangle
-
+dist=p.Results.DistanceMatrix;
+%% load distance matrix
+%remark: intrahemespheric distances are geodesic, intrahemispheric and
+%subcortical distances euclidean.
+distance_matrix=load(dist);
+dist_data=distance_matrix.EUGEODistancematrix;
+%% load dconn one 
 dconn_short_conn = ciftiopen(dconn_short,wb_command);
 dconn_short_data = dconn_short_conn.cdata;
 if (dconn_short_data(1,1) > 7)
     dconn_short_data = tanh(dconn_short_data);
 end
+%extract dimension infor to use it later to differentiate between L and R
+%hemisphere for distances
+try
+dconn_new.diminfo=dconn_short_conn.diminfo;
+catch
+    which ciftiopen
+    error('wrong ciftiopen')
+end
+
 clear dconn_short_conn
 
-%% load dconn two and select upper triangle
+%% load dconn two 
 dconn_long_conn = ciftiopen(dconn_long,wb_command);
 dconn_long_data = dconn_long_conn.cdata;
 if (dconn_long_data(1,1) > 7)
     dconn_long_data = tanh(dconn_long_data);
 end
 clear dconn_long_conn
+%% define left and right hemisphere to ensur that only geodesic distances are used for excluding correlations
+Lhemi=[dconn_new.diminfo{1,1}.models{1,1}.start,(dconn_new.diminfo{1,1}.models{1,1}.start + dconn_new.diminfo{1,1}.models{1,1}.count)-1];
+Rhemi=[dconn_new.diminfo{1,1}.models{1,2}.start,(dconn_new.diminfo{1,1}.models{1,2}.start + dconn_new.diminfo{1,1}.models{1,2}.count)-1];
 
-
+dist_reduced=NaN(size(dist_data));
+dist_reduced(1:Lhemi(2),1:Lhemi(2))=dist_data(1:Lhemi(2),1:Lhemi(2));
+dist_reduced(Rhemi(1):Rhemi(2),Rhemi(1):Rhemi(2))=dist_data(Rhemi(1):Rhemi(2),Rhemi(1):Rhemi(2));
+%binary matrix with 1 for all datapoints that shall be removed
+binary_dist=dist_reduced>=10 | isnan(dist_reduced);
+binary_dist=logical(abs(binary_dist-1));
+%% exclude close voxels for correlation and calculate correlation by seed
+dconn_short_data(binary_dist)=NaN;
+dconn_long_data(binary_dist)=NaN;
+%% calculate pairwise correlation (R squared)
+%use loop as we're only interested in the diagonal of the matrix (faster)
+tic
+for i=1:size(dconn_short_data,1)
+    seedCorr(i,1)=(corr(dconn_short_data(:,i), dconn_long_data(:,i), 'rows','pairwise')).^2;
+end
+toc
 %% calculate correlation and write to file
-dconn_corr = corr(dconn_short_data,dconn_long_data);
-%along y dimension: each seed from short dataset. Along x dimension: each seed from long dataset.
-% to get average connectivity of each seed from short dataset with ground truth, average has to be taken along second (x) dimesion.
-avg_dconn_corr=mean(dconn_corr,2);
 
 % define fitting string for output name (cannot be too long) --> should be refined for more general usage purposes
 [~,dconn_short_short]=fileparts(dconn_short); 
@@ -75,7 +105,7 @@ str_ind1=strfind(dconn_long_short, '_task');
 str_ind2=strfind(dconn_long_short, 'nii');
 dconn_long_short=dconn_long_short([1:str_ind1-1, str_ind2+3:end]);
 
-%dlmwrite(strcat(output_directory,'/',dconn_one_short,'_CorrTo_',dconn_two_short,'.txt'),dconn_corr);
-writematrix(avg_dconn_corr, strcat(output_directory,'/',dconn_short_short,'_CorrTo_',dconn_long_short,'all_vertices.txt'));
+writematrix(seedCorr, strcat(output_directory,'/',dconn_short_short,'_CorrTo_',dconn_long_short,'all_vertices.txt'));
+
 end
 
