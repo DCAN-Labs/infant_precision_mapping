@@ -24,20 +24,22 @@ addParamValue(p,'DconnGroundTruth','./dummytwo');
 addParamValue(p,'DistanceMatrix','./dummythree');
 addParamValue(p,'OutputDirectory','./');
 addParamValue(p,'wb_command','wb_command');
-addParamValue(p,'CIFTI_path','/home/faird/shared/code/internal/utilities/cifti-matlab');
-addParamValue(p,'GIFTI_path','/home/faird/shared/code/internal/utilities/gifti/');
+addParamValue(p,'CIFTI_path','/home/miran045/shared/code/internal/utilities/cifti-matlab');
+addParamValue(p,'GIFTI_path','/home/miran045/shared/code/internal/utilities/gifti/');
 
 parse(p,varargin{:})
 
-addpath(genpath('/home/miran045/shared/code/internal/utilities/Matlab_CIFTI'));
-addpath(genpath('/home/miran045/shared/code/internal/utilities/CIFTI/'));
-addpath(genpath('/home/miran045/shared/code/internal/utilities/gifti'));
+addpath(genpath('/home/miran045/shared/code/internal/utilities/cifti-matlab'));
+addpath(genpath('/home/miran045/shared/code/internal/utilities/gifti/'));
+% addpath(genpath('/home/miran045/shared/code/internal/utilities/Matlab_CIFTI'));
+% addpath(genpath('/home/miran045/shared/code/internal/utilities/CIFTI/'));
+% addpath(genpath('/home/miran045/shared/code/internal/utilities/gifti'));
 
 %% parse the inputs
 output_directory=p.Results.OutputDirectory;
 wb_command=p.Results.wb_command;
-addpath(genpath(p.Results.CIFTI_path))
-addpath(genpath(p.Results.GIFTI_path))
+%addpath(genpath(p.Results.CIFTI_path))
+%addpath(genpath(p.Results.GIFTI_path))
 dconn_short=p.Results.DconnShort;
 dconn_long=p.Results.DconnGroundTruth;
 dist=p.Results.DistanceMatrix;
@@ -54,7 +56,12 @@ if (dconn_short_data(1,1) > 7)
 end
 %extract dimension infor to use it later to differentiate between L and R
 %hemisphere for distances
+try
 dconn_new.diminfo=dconn_short_conn.diminfo;
+catch
+    which ciftiopen
+    error('wrong ciftiopen')
+end
 
 clear dconn_short_conn
 
