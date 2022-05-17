@@ -75,6 +75,6 @@ str_ind2=strfind(dconn_two_short, 'nii');
 dconn_two_short=dconn_two_short([1:str_ind1-1, str_ind2+3:end]);
 
 %dlmwrite(strcat(output_directory,'/',dconn_one_short,'_CorrTo_',dconn_two_short,'.txt'),dconn_corr);
-writematrix(dconn_corr, strcat(output_directory,'/',dconn_one_short,'_CorrTo_',dconn_two_short,'.txt'));
+%writematrix(dconn_corr, strcat(output_directory,'/',dconn_one_short,'_CorrTo_',dconn_two_short,'.txt'));
 end
 
