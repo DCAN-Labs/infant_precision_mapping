@@ -1,9 +1,11 @@
 #!/bin/bash
 
 #SBATCH --job-name=dconn_corr # job name
-#SBATCH --mem-per-cpu=32GB
-#SBATCH --time=4:00:00          # total run time limit (HH:MM:SS)
-#SBATCH --cpus-per-task=4
+#SBATCH --nodes=1
+#SBATCH --ntasks=6
+#SBATCH --tmp=10gb
+#SBATCH --mem=60gb
+#SBATCH -t 03:00:00
 #SBATCH --partition=amdsmall,small,ram256g
 
 #SBATCH --mail-type=begin        # send email when job begins
