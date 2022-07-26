@@ -23,6 +23,7 @@ addParamValue(p,'DconnShort','./dummy');
 addParamValue(p,'DconnGroundTruth','./dummytwo');
 addParamValue(p,'DistanceMatrix','./dummythree');
 addParamValue(p,'OutputDirectory','./');
+addParamValue(p,'OutputName','./');
 addParamValue(p,'wb_command','wb_command');
 addParamValue(p,'CIFTI_path','/home/miran045/shared/code/internal/utilities/cifti-matlab');
 addParamValue(p,'GIFTI_path','/home/miran045/shared/code/internal/utilities/gifti/');
@@ -37,6 +38,7 @@ addpath(genpath('/home/miran045/shared/code/internal/utilities/gifti/'));
 
 %% parse the inputs
 output_directory=p.Results.OutputDirectory;
+output_name=p.Results.OutputName;
 wb_command=p.Results.wb_command;
 %addpath(genpath(p.Results.CIFTI_path))
 %addpath(genpath(p.Results.GIFTI_path))
@@ -94,18 +96,7 @@ end
 toc
 %% calculate correlation and write to file
 
-% define fitting string for output name (cannot be too long) --> should be refined for more general usage purposes
-[~,dconn_short_short]=fileparts(dconn_short); 
-str_ind1=strfind(dconn_short_short, '_task');
-str_ind2=strfind(dconn_short_short, 'nii');
-dconn_short_short=dconn_short_short([1:str_ind1-1, str_ind2+3:end]);
-
-[~,dconn_long_short]=fileparts(dconn_long); 
-str_ind1=strfind(dconn_long_short, '_task');
-str_ind2=strfind(dconn_long_short, 'nii');
-dconn_long_short=dconn_long_short([1:str_ind1-1, str_ind2+3:end]);
-
-writematrix(seedCorr, strcat(output_directory,'/',dconn_short_short,'_CorrTo_',dconn_long_short,'all_vertices.txt'));
+writematrix(seedCorr, strcat(output_directory,'/', output_name, '.txt'));
 
 end
 

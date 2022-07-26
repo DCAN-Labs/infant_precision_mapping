@@ -67,7 +67,7 @@ hold on
 plot(x, mean_corrC, 'color', '#CA4072', 'LineWidth',4)
 hold on 
 plot(x, mean_corrC_N, 'color', '#23A7AC', 'LineWidth',4)
-legend({'TE2 consec','TE2-NORDIC consec', 'ME consec', 'ME-NORDIC consec'},'Location','southeast')
+legend({'TE2 consec', 'TE2 consec NORDIC','ME consec', 'ME consec NORDIC'},'Location','southeast')
 xlabel('Time (min)')
 ylabel('Correlation')
 hold on

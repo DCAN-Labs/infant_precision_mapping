@@ -1,0 +1,1 @@
+for s in ses-102521 ses-102521NORDIC; do for av in "visual 23421" "motor 16404" "dmn 6619" "auditory 6783"  "fp 17208" "salience 9365" "dan 13487" "tem_pole 19675" "front_pole 18639" "smd 5970" "van 29443"; do for f in alldata_TE1 alldata_TE2 alldata_TE3 alldata_TE4 alldata_TE5; do sbatch create_seedmap_figures_s3.sh ${s} ${av} ${f}; done; done; done

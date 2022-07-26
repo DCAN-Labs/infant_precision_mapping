@@ -41,7 +41,7 @@ wb_command -cifti-math 'x' ./${AREA}_${VERTEX}_${SES}_${FOLDER}.dscalar.nii -var
 
 matlab -r "addpath('/home/miran045/shared/projects/WashU_Nordic/cifti_connectivity/seedmap_comparison'); make_figures_s3('${work_dir}', '${AREA}', '${VERTEX}', '${SES}', '${FOLDER}')";
 
-mv ${work_dir}/*.png /home/miran045/shared/projects/WashU_Nordic/cifti_connectivity/seedmap_comparison/figures/
+mv ${work_dir}/*.png /home/miran045/shared/projects/WashU_Nordic/cifti_connectivity/seedmap_comparison/figuresTEx/
 
 
 
