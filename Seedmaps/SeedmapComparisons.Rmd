@@ -1,0 +1,2480 @@
+---
+title: "Seedmap comparisons"
+author: "jm"
+date: "4/18/2022"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(magick)
+library(magrittr)
+```
+
+## overview over all possible comparisons
+```{r pic0, out.width = "100%"}
+knitr::include_graphics("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/overview_comp.png") 
+```
+
+## overview over the included seeds
+```{r pic01, out.width = "100%"}
+knitr::include_graphics("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/seeds_overview.png") 
+```
+
+
+
+## Seed motor cortex, no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic3}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed motor cortex, full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic4}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+
+## Seed motor cortex, no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic3.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed motor cortex, full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic4.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed motor cortex 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic4.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed motor cortex 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic4.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/motor_16404_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed sensorimotor dorsal, no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic21}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed sensorimotor dorsal, full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic22}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed sensorimotor dorsal, no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic21.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed sensorimotor dorsal, full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic22.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed sensorimotor dorsal 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic22.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed sensorimotor dorsal 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic22.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/smd_5970_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed visual cortex, no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic5}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed visual cortex, full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic6}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+
+## Seed visual cortex, no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic5.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed visual cortex, full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic6.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed visual cortex 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic6.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed visual cortex 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic6.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/visual_23421_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed DMN (angular gyus), no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic7}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed DMN (angular gyus), full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic8}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+
+## Seed DMN (angular gyus), no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic7.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed DMN (angular gyus), full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic8.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+
+## Seed DMN (angular gyus) 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic8.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed DMN (angular gyus) 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic8.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dmn_6619_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed auditory cortex, no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed auditory cortex, full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+
+## Seed auditory cortex, no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed auditory cortex, full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic2.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed auditory cortex 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic2.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed auditory cortex 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic2.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/auditory_6783_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+
+## Seed temporal pole, no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic13}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed temporal pole, full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic14}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+
+## Seed temporal pole, no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic13.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed temporal pole, full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic14.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed temporal pole 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic14.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed temporal pole 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic14.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/tem_pole_19675_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed ventral attention network, no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic19}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+
+## Seed ventral attention network, full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic20}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed ventral attention network, no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic19.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed ventral attention network, full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic20.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed ventral attention network 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic20.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed ventral attention network 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic20.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/van_29443_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+
+## Seed dorsal attention network, no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic17}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed dorsal attention network, full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic18}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed dorsal attention network, no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic17.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed dorsal attention network, full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic18.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed dorsal attention network 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic18.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed dorsal attention network 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic18.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/dan_13487_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed fronto-parietal, no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic9}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed fronto-parietal, full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic10}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+
+## Seed fronto-parietal, no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic9.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed fronto-parietal, full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic10.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed fronto-parietal 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic10.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed fronto-parietal 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic10.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/fp_17208_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+
+## Seed salience network, no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic11}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+
+## Seed salience network, full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic12}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed salience network, no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic11.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed salience network, full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic12.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed salience network 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic12.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed salience network 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic12.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/salience_9365_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+
+## Seed frontal pole, no ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic15}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed frontal pole, full ICA
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic16}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+
+## Seed frontal pole, no ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic15.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_10min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_20min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_30min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_40min_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed frontal pole, full ICA, NORDIC
+10 min &emsp; 15 min &emsp; 20 min &emsp;  30 min &emsp;  40 min &emsp;  84 min 
+```{r pic16.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_10min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_20min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_30min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_40min_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("320") %>% 
+  image_crop("120x200+121")
+```
+
+## Seed frontal pole 15min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic16.1.1}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_15min_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_15min_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
+
+## Seed frontal pole 84min
+no ICA &emsp; &emsp; &emsp; full ICA &emsp; &emsp; no ICA NORDIC &emsp;  full ICA NORDIC
+```{r pic16.1.2}
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")    
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")   
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171") 
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_alldata_noICA_fig.png") %>% 
+  image_scale("450") %>% 
+  image_crop("170x252+171")  
+image_read("C:/Users/moser297/Box/Figures_sub-4049/FiguresSeedmaps/front_pole_18639_ses-102521NORDIC_alldata_fullICA_fig.png") %>% 
+  image_scale("450") %>% 
+ image_crop("170x252+171")
+```
